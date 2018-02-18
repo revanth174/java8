@@ -54,6 +54,11 @@ public class Sample {
 	    // print all males
 		persons.stream().filter(p -> p.gender == Gender.MALE)
 						.forEach(System.out:: println);
+		
+		
+		// get all age of persons
+		persons.stream()
+				.map(Person :: getAge);
 	}
 
 	
